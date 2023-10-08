@@ -1,100 +1,38 @@
-# 03 JavaScript: Password Generator
+# Random Password Generator
 
-## Your Task
+## Description 
+In this repository an HTML/JS file which generates a random password when the user inputs the following criteria.
+Password generator is intended for public use and at the users discretion. 
+>* Uppercase
+>* Lowercase
+>* Symbols
+>* numbers
+>* min/max (8 - 128) character length
+Once the following requirements have been met via clicking the generate button. 
+The password generator can be found on [this page](https://utero93.github.io/PW-R-GEN/)
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+![Password Generator](https://vscode.dev/github/Utero93/PW-R-GEN/blob/main/Password-gen-screenshot.png)
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Installation
+Navigate to the repository,
+>* copy ssh key and git clone plus ssh key in terminal
+>* in terminal enter "code ." and if programmed already, the text editor of your choice should open with the files from the repo inside.
+>* open the HTML page in the text editor and right click on the tab to open in either a "default/live" browser.
+>* from there follow the prompts and enjoy creating random passwords.
+>* other way to install is by downloading zip files into users desktop or specified folder for downloads.  
 
-## User Story
+## Usage 
+Once you have opened the HTML file in the browser
+>* click on the generate password button
+>* a prompt asking for character length input will appear, enter the amount desired by the user.
+>* next a prompt asking to include lowercase letters will appear, the user can choose to include lowercase or not by hitting the "cancel" option
+>* the next prompt will ask the user if they want to include uppercase letters, and again the user can choose at their own discretion.
+>* the next prompt will ask the user to choose if they want to include special characters, and the user can again, decide to "cancel" or include that in their password.
+>* finally, the last ptompt for the user to choose is whether to include numbers or not. They may choose to add it or not.
+>* once this portion of prompts is complete, a password using the criteria specified by the user  will generate.
+>* depending on what prompts the user chooses to include or not include will affect what password is generated.
+>* Password will not generate if the user doesnt enter a character length, or chooses to not include any of the prompts that appear once clicking the generate password button.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Credits 
+N/A
 
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
