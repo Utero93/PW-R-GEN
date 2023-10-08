@@ -6,25 +6,19 @@ var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',];
 var symbols = [',', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '{', '}', '|', '<', '>', '?', '-', '=', '[', ']', ';', ',', '.', '/',];
 
+// Write password to the #password input
+function writePassword() {
+  // this will return either true/false, if it returns false then the requirements werent met
+  var correctPasswords = getPassword();
+  var passwordText = document.querySelector("#password");
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
-
-// // Write password to the #password input
-// function writePassword() {
-//   // this will return either true/false, if it returns false then the requirements werent met
-//   var correctPasswords = getPassword();
-
-// if(correctPasswords) {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-// }
+if(correctPasswords) {
+  var newPassword = generatePassword(); 
+  passwordText.value = newPassword;
+}
+else {
+  passwordText.value = "";
+}
 
 }
 
@@ -67,3 +61,9 @@ function getPassword() {
 
   return true;
 }
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
