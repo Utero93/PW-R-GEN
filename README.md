@@ -11,7 +11,7 @@ Password generator is intended for public use and at the users discretion.
 Once the following requirements have been met via clicking the generate button. 
 The password generator can be found on [this page](https://utero93.github.io/PW-R-GEN/)
 
-![Password Generator](https://vscode.dev/github/Utero93/PW-R-GEN/blob/main/Password-gen-screenshot.png)
+![Password Generator](Password-gen-screenshot.png)
 
 ## Installation
 Navigate to the repository,
